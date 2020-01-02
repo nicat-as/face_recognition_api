@@ -13,8 +13,8 @@ from sqlalchemy import exc
 from sqlalchemy.sql import text
 
 ALLOWED_EXTENSIONS = set(['txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
-app.config["UPLOAD_FOLDER"] = '/home/nicat/Documents/paper/face_recognition_api/files'
-picklePath = '/home/nicat/Documents/paper/face_recognition_api/app/encodings.pickle'
+app.config["UPLOAD_FOLDER"] = ''
+
 
 sql = text("""select u.id, u.name, u.lastname, u.email, r.name raspberry_name
 			from user u
