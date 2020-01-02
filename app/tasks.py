@@ -87,8 +87,8 @@ def recognition(imgPath, picklePath):
 # print(name)
 
 def sendMessage(to, content, fileDir):
-    EMAIL_ADD = 'face.recognition.iot@gmail.com'  # os.environ.get("MAIL_USER")
-    EMAIL_PASS = 'tostwepjoygywzjn'  # os.environ.get("MAIL_PASS")
+    EMAIL_ADD = ''  # os.environ.get("MAIL_USER")
+    EMAIL_PASS = ''  # os.environ.get("MAIL_PASS")
 
     msg = EmailMessage()
     msg["Subject"] = content
